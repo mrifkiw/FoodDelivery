@@ -15,9 +15,77 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zN0-Ye-kI7">
+                                <rect key="frame" x="36" y="726" width="321" height="56"/>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.37647058823529411" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="ODW-NR-LKE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextBtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fyC-ut-Xsh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover the best foods from over 1,000 restaurants and fast delivery to your doorstep" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ka-yP-K20">
+                                <rect key="frame" x="36" y="634.66666666666663" width="321" height="31.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <color key="textColor" red="0.29019607843137252" green="0.29411764705882354" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find Food You Love" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAd-Fe-fYP">
+                                <rect key="frame" x="36" y="565" width="321" height="33.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
+                                <color key="textColor" red="0.29019607843137252" green="0.29411764705882354" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Axt-Lt-Jlj">
+                                <rect key="frame" x="36" y="499" width="321" height="26"/>
+                                <color key="pageIndicatorTintColor" red="0.83921568627450982" green="0.83921568627450982" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.9882352941176471" green="0.37647058823529411" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="pageControlChanges:" destination="Y6W-OH-hqX" eventType="valueChanged" id="aCf-Xv-phZ"/>
+                                </connections>
+                            </pageControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_ftux_1" translatesAutoresizingMaskIntoConstraints="NO" id="dBJ-fv-o09">
+                                <rect key="frame" x="36" y="149" width="321" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="cmu-WO-Yyi"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zN0-Ye-kI7" firstAttribute="top" secondItem="0Ka-yP-K20" secondAttribute="bottom" constant="60" id="74B-Rj-x3a"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="zN0-Ye-kI7" secondAttribute="bottom" constant="36" id="ApW-s1-kJr"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="qAd-Fe-fYP" secondAttribute="trailing" constant="36" id="DmY-7x-bLZ"/>
+                            <constraint firstItem="0Ka-yP-K20" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="36" id="HVp-7O-NUq"/>
+                            <constraint firstItem="Axt-Lt-Jlj" firstAttribute="top" secondItem="dBJ-fv-o09" secondAttribute="bottom" constant="30" id="HWp-Uj-0ay"/>
+                            <constraint firstItem="dBJ-fv-o09" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="36" id="Lsw-no-qOn"/>
+                            <constraint firstItem="0Ka-yP-K20" firstAttribute="top" secondItem="qAd-Fe-fYP" secondAttribute="bottom" constant="36" id="Mkh-ha-rzg"/>
+                            <constraint firstItem="Axt-Lt-Jlj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="36" id="QNI-vy-TeL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Axt-Lt-Jlj" secondAttribute="trailing" constant="36" id="Vkn-xE-V5J"/>
+                            <constraint firstItem="qAd-Fe-fYP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="36" id="auW-Ru-n8e"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dBJ-fv-o09" secondAttribute="trailing" constant="36" id="c2I-sM-70Y"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0Ka-yP-K20" secondAttribute="trailing" constant="36" id="dpr-XJ-17Z"/>
+                            <constraint firstItem="zN0-Ye-kI7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="36" id="qJk-Bt-75m"/>
+                            <constraint firstItem="qAd-Fe-fYP" firstAttribute="top" secondItem="Axt-Lt-Jlj" secondAttribute="bottom" constant="40" id="qXH-UP-JTK"/>
+                            <constraint firstItem="dBJ-fv-o09" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="ulB-mH-VOy"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="zN0-Ye-kI7" secondAttribute="trailing" constant="36" id="wAp-96-HEE"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="dBJ-fv-o09" id="6pO-p3-jVX"/>
+                        <outlet property="nextBtn" destination="zN0-Ye-kI7" id="e7A-Fa-y82"/>
+                        <outlet property="pageControl" destination="Axt-Lt-Jlj" id="LKr-0N-gFs"/>
+                        <outlet property="subtitleLabel" destination="0Ka-yP-K20" id="tS7-jN-eFS"/>
+                        <outlet property="titleLabel" destination="qAd-Fe-fYP" id="2PJ-Tu-xbd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -25,6 +93,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="img_ftux_1" width="225" height="295"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
