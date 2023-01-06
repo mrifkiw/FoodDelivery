@@ -10,13 +10,14 @@
 		A551EB6629680F5300FF4279 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551EB6529680F5300FF4279 /* AppDelegate.swift */; };
 		A551EB6829680F5300FF4279 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551EB6729680F5300FF4279 /* SceneDelegate.swift */; };
 		A551EB6A29680F5300FF4279 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551EB6929680F5300FF4279 /* ViewController.swift */; };
-		A551EB6D29680F5300FF4279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A551EB6B29680F5300FF4279 /* Main.storyboard */; };
 		A551EB7029680F5300FF4279 /* FoodDelivery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A551EB6E29680F5300FF4279 /* FoodDelivery.xcdatamodeld */; };
 		A551EB7229680F5400FF4279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A551EB7129680F5400FF4279 /* Assets.xcassets */; };
 		A551EB7529680F5400FF4279 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A551EB7329680F5400FF4279 /* LaunchScreen.storyboard */; };
 		A551EB8029680F5500FF4279 /* FoodDeliveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551EB7F29680F5500FF4279 /* FoodDeliveryTests.swift */; };
 		A551EB8A29680F5500FF4279 /* FoodDeliveryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551EB8929680F5500FF4279 /* FoodDeliveryUITests.swift */; };
 		A551EB8C29680F5500FF4279 /* FoodDeliveryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551EB8B29680F5500FF4279 /* FoodDeliveryUITestsLaunchTests.swift */; };
+		A551EB9B29680F9A00FF4279 /* Ftux.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A551EB9A29680F9A00FF4279 /* Ftux.storyboard */; };
+		A551EB9D296813EE00FF4279 /* FtuxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551EB9C296813EE00FF4279 /* FtuxViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +42,6 @@
 		A551EB6529680F5300FF4279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A551EB6729680F5300FF4279 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A551EB6929680F5300FF4279 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A551EB6C29680F5300FF4279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A551EB6F29680F5300FF4279 /* FoodDelivery.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodDelivery.xcdatamodel; sourceTree = "<group>"; };
 		A551EB7129680F5400FF4279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A551EB7429680F5400FF4279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		A551EB8529680F5500FF4279 /* FoodDeliveryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodDeliveryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A551EB8929680F5500FF4279 /* FoodDeliveryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDeliveryUITests.swift; sourceTree = "<group>"; };
 		A551EB8B29680F5500FF4279 /* FoodDeliveryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDeliveryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A551EB9A29680F9A00FF4279 /* Ftux.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ftux.storyboard; sourceTree = "<group>"; };
+		A551EB9C296813EE00FF4279 /* FtuxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FtuxViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +103,10 @@
 		A551EB6429680F5300FF4279 /* FoodDelivery */ = {
 			isa = PBXGroup;
 			children = (
+				A551EB9829680F7100FF4279 /* Module */,
 				A551EB6529680F5300FF4279 /* AppDelegate.swift */,
 				A551EB6729680F5300FF4279 /* SceneDelegate.swift */,
 				A551EB6929680F5300FF4279 /* ViewController.swift */,
-				A551EB6B29680F5300FF4279 /* Main.storyboard */,
 				A551EB7129680F5400FF4279 /* Assets.xcassets */,
 				A551EB7329680F5400FF4279 /* LaunchScreen.storyboard */,
 				A551EB7629680F5400FF4279 /* Info.plist */,
@@ -128,6 +130,23 @@
 				A551EB8B29680F5500FF4279 /* FoodDeliveryUITestsLaunchTests.swift */,
 			);
 			path = FoodDeliveryUITests;
+			sourceTree = "<group>";
+		};
+		A551EB9829680F7100FF4279 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				A551EB9929680F7A00FF4279 /* Ftux */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		A551EB9929680F7A00FF4279 /* Ftux */ = {
+			isa = PBXGroup;
+			children = (
+				A551EB9A29680F9A00FF4279 /* Ftux.storyboard */,
+				A551EB9C296813EE00FF4279 /* FtuxViewController.swift */,
+			);
+			path = Ftux;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +254,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A551EB7529680F5400FF4279 /* LaunchScreen.storyboard in Resources */,
+				A551EB9B29680F9A00FF4279 /* Ftux.storyboard in Resources */,
 				A551EB7229680F5400FF4279 /* Assets.xcassets in Resources */,
-				A551EB6D29680F5300FF4279 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A551EB9D296813EE00FF4279 /* FtuxViewController.swift in Sources */,
 				A551EB6A29680F5300FF4279 /* ViewController.swift in Sources */,
 				A551EB7029680F5300FF4279 /* FoodDelivery.xcdatamodeld in Sources */,
 				A551EB6629680F5300FF4279 /* AppDelegate.swift in Sources */,
@@ -301,14 +321,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A551EB6B29680F5300FF4279 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A551EB6C29680F5300FF4279 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A551EB7329680F5400FF4279 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,7 +458,7 @@
 				INFOPLIST_FILE = FoodDelivery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Ftux;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -474,7 +486,7 @@
 				INFOPLIST_FILE = FoodDelivery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Ftux;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
